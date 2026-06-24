@@ -91,6 +91,25 @@
         </tr>
     </table>
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            confetti({
+                particleCount: 160,
+                spread: 80,
+                origin: { y: 0.65 }
+            });
+
+            setTimeout(function () {
+                confetti({
+                    particleCount: 100,
+                    spread: 100,
+                    origin: { y: 0.7 }
+                });
+            }, 700);
+        });
+    </script>
 </body>
 
 </html>
